@@ -15,6 +15,7 @@ const Cards = () => {
     let purchased = [];
     if(list.includes(e.target.id)){
       toastErrorNotify("You have already added this item to your basket!")
+      setAdd(add)
     }else{
     purchased.push(e.target.id);
     setList([].concat(purchased, list))}
